@@ -23,3 +23,11 @@ def make_dictionary(word):
 def is_anagram(word1, word2):
 	return make_dictionary(word1)==make_dictionary(word2)
 	
+
+#Returning to some of the first python I wrote after a long time gave me this improvement
+
+from collections import Counter
+
+is_anagram = lambda word1, word2: Counter(word1) == Counter(word2)
+
+#boom
